@@ -20,6 +20,10 @@ async function translateText() {
 
   document.getElementById("outputText").innerText =
     data.translatedText;
+}catch(error){
+    document.getElementById("outputText").innerText =
+    "Translation failed. Please try again .";
+      }
 }
 
 function copyText() {
