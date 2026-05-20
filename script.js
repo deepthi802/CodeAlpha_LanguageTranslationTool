@@ -3,7 +3,7 @@ async function translateText() {
   const source = document.getElementById("sourceLang").value;
   const target = document.getElementById("targetLang").value;
 
-  const response = await fetch("https://libretranslate.de/translate", {
+  const response = await fetch("https://api.mymemory.translated.net/get", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
